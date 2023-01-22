@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, :after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-size: 12px;
+  color: #616161;
+  font-family: "Rubik", sans-serif;
+}
+
+[class*=__container] {
+  max-width: 1087px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 114px;
+  align-items: center;
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+.header__button {
+  flex: 0 0 252px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  margin-right: 40px;
+  color: #000000;
+}
+.menu__item a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.14em;
+  color: #000000;
+}
+
+.button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.14em;
+  color: #FCFDFE;
+  background: #EC5863;
+  border-radius: 5px;
+  padding: 13px 30px;
+}
+
+.button:hover {
+  background: #dc121f;
+}
+
+.botton-blue {
+  background: #4285F4;
+}
+
+.botton-blue:hover {
+  background-color: rgba(66, 134, 244, 0.5882352941);
+}
+
+.get-started {
+  background: #FAFBFD;
+}
+.get-started__container {
+  background: url(../img/header-bg.svg) right no-repeat;
+  overflow: visible;
+}
+.get-started__container {
+  padding: 153px 15px 48px 15px;
+}
+.get-started__row {
+  display: flex;
+}
+.get-started__text-block {
+  flex: 1 1 45%;
+}
+.get-started__doctor-img {
+  flex: 1 1 55%;
+  text-align: end;
+}
+.get-started__doctor-img img {
+  margin-right: -20px;
+  position: relative;
+  z-index: 2;
+}
+.get-started__play-botton {
+  display: block;
+  margin-top: 60px;
+  min-width: 228px;
+}
+.get-started__play-botton img {
+  display: inline-block;
+}
+.get-started__play-botton-text {
+  display: inline-block;
+  padding: 6px 12px;
+}
+.get-started__play-botton-text p:nth-child(1) {
+  display: block;
+  font-size: 13px;
+  line-height: 126%;
+  color: #B0B0B0;
+  margin-bottom: 5px;
+}
+.get-started__play-botton-text p:nth-child(2) {
+  display: block;
+  font-size: 9px;
+  line-height: 126%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.text-block {
+  padding: 87px 10px;
+}
+.text-block__head {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.text-block__head span {
+  color: #4285F4;
+}
+.text-block__button {
+  margin-top: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.text-block__button a {
+  display: block;
+  width: 144px;
+}
+.text-block__text {
+  font-size: 12px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  color: #616161;
+}
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 79px 40px 79px 40px;
+}
+.features__left-side {
+  flex: 1 0 50%;
+}
+.features__right-side {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features__text-block {
+  max-width: 380px;
+}
+.features__text-block span {
+  color: #EC5863;
+}
+
+.expert {
+  padding: 53px 20px 56px 45px;
+  background-color: #FAFBFD;
+}
+.expert__head {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 785px;
+  max-height: 300px;
+  background: url(../img/main/expert/Group.png) 0 0/100% 100% no-repeat;
+  margin-bottom: 46px;
+}
+.expert__row {
+  display: flex;
+  justify-content: space-between;
+}
+.expert__left-part {
+  flex: 1 0 40%;
+}
+.expert__text-block {
+  max-width: 393px;
+}
+.expert__right-part {
+  flex: 1 0 60%;
+  text-align: center;
+}
+.expert__video {
+  position: relative;
+  padding-bottom: 45%;
+  text-align: center;
+}
+.expert__video iframe {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.healscare__text-block {
+  text-align: center;
+  padding: 0 0;
+  padding: 29px 0 46px 0;
+}
+.healscare__text-block p {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.healscare__text-block span {
+  color: #EC5863;
+}
+.healscare__row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 46px 0;
+  background: url(../img/main/healscare/box1.svg) bottom left no-repeat, url(../img/main/healscare/box2.svg) 30% 30% no-repeat, url(../img/main/healscare/box3.svg) 69% 93% no-repeat, url(../img/main/healscare/box4.svg) top right no-repeat;
+}
+.healscare__items {
+  flex: 0 1 auto;
+  padding: 36px 18px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+}
+.footer__container {
+  text-align: center;
+  padding: 46px 0;
+}
+.footer__container a:nth-child(1) {
+  display: inline-block;
+  margin-right: 25px;
+}
+.footer__container a:nth-child(2) {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.img-app {
+  margin-top: -6px;
+}
